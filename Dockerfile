@@ -10,6 +10,8 @@ RUN add-apt-repository -y ppa:honeynet/nightly
 RUN apt-get update
 RUN apt-get install -y dionaea-phibo
 
+RUN apt-get install nano
+
 ADD conf/dionaea.conf /etc/dionaea/dionaea.conf
 ADD bin/launch.sh /usr/bin/launch.sh
 
